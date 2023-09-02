@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens-midia</title>
+</head>
+<body>
+<h2>
+    links da aulas 
+
+</h2>
+<a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-11-aula-1-imagens-dinamicas-2/" target="_blank" >  1 Imagens Dinâmicas</a><br>
+<a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-11-aula-2-imagens-que-se-adaptam-sozinhas/" target="_blank" >  2 Imagens que se adaptam sozinhas</a>
+<br><a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-11-aula-3-colocando-audio-no-seu-site/" target="_blank" >3  Colocando áudio no seu site</a>
+<br>
+<h1>Imagem dinamicas</h1>
+<p>tente abrir esta imagem em varios dispositivos  ou simplesmente almnta e diminuir  o tamanho do seu navegador</p>
+<picture>
+    <!-- manter nesta ordem 
+    obs poso usar varios tamanho dese que seja em ordem  por tamanho 
+posso tambem usar imagens cortadas  
+-->
+
+    <!--primeiro --><source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png"> 
+    <!--segundo --> <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+    <!--terceiro --> <img src="imagens/foto-g.png" alt="imagem flexivel">
+    <!-- a ordem tem muita relevacia  -->
+</picture>
+    
+<h1>reproduzindo audio</h1>
+<p>vamos aprender a reproduzir audio</p>
+<!-- <audio preload="metadata" autoplay controls loop> -->
+<audio preload="metadata" autopla controls> 
+   <source src="midia/Flying.mp3" type="audio/mpeg">
+   <source src="midia/Flying.ogg" type="audio/ogg">
+   <source src="midia/Flying.wav" type="audio/wav"> <!-- nap usar este pois é o mais pesado-->
+   <p>infelismente seu navegador nãoconsegue reproduzir audio . <a href="midia/Flying.mp3">clique para baixar o arquivo</a></p>
+   <!-- 
+    para o audio se repetir varias ves  bats coloca  o loop 
+    <audio preload="metadata" autoplay controls loop>
+    -->
+</audio>
+
+
+</body>
+</html>

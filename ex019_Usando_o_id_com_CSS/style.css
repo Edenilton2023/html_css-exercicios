@@ -1,0 +1,45 @@
+@charset "UTF-8";
+main{
+    background: #8FBF60;
+    padding: 30px;
+}
+main h1{
+    color:#3B7302;
+}
+#principal{
+    color:#F2F2F2;
+  text-align: center;
+  background:#3B7302;
+margin-left: 300px;
+margin-right: 300px;
+border-radius: 30px;
+border: 3px solid whitesmoke;
+
+
+}
+.basico{
+color: #3c805e;
+font-weight: bold;
+font-style: italic;
+}
+.intermediario{
+ color: #80793c;
+ font-weight: bolder;
+ font-style: italic;
+
+ 
+}
+
+.Avançado{
+    color: #803c3c;
+    font-weight: 900;
+    font-style: italic;
+
+    
+
+}
+main h2{
+    color:#446610;
+}
+/* posso ter duas claase no mesmo elemeto,
+ e ate mesmo , id  e classe no mesmo elemento */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            border: 1px solid black;
+         color: green;
+            background: lightgray;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            font-size: 40px;
+        }
+        
+        /*  pseudo classe esta relacionado ao estado de um elemeto 
+        so vai aconterec quando passar p mouse por cinma */
+
+        div:hover{
+            background-color: red;
+            color: aliceblue;
+            
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        span p{
+            display: none; /* escoder */
+        }
+        span:hover > p{
+            display: block; /*  mostra*/
+            color: whitesmoke;
+            background: red;
+            width: 300px;
+            height: 30px;
+            text-align: center;
+          padding: 10px ;
+          border-radius: 10px;
+        }
+/*  */
+    </style>
+</head>
+<body>
+    <h2>link da aula <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-03-pseudo-classes-em-css/"> Pseudo-classes em CSS</a></h2>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+
+    <h2>EXEMPLO DE HOVER</h2>
+
+    <P>passe o mouse sobre o testo abaixo</P>
+    <span>
+        passe o mouse aqui
+        <p>TEXTO ESCODIDO</p>
+
+    </span>
+
+
+</body>
+</html>

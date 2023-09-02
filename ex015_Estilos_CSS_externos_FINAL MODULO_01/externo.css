@@ -1,0 +1,16 @@
+body{
+    background: lightblue;
+
+}
+h1{
+background: dodgerblue;
+color: mediumblue;
+}
+h2{
+color: darkred;
+font-size: 1.2em ;
+}
+p{
+text-align: justify;
+
+}
