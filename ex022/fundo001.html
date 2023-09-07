@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de imagem de fundo</title>
+    <style>
+       main{
+             display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-image: url(imagens/wallpaper002.jpg);
+            height:90vh;
+          background-repeat: no-repeat;
+           
+        }
+      
+        div.quadrado{
+           border-radius: 10px;
+            border: 3px solid black;
+            width: 300px;
+            height: 300px;
+            background: lightgray;
+            display: flex;
+            justify-content: center;
+         
+        }
+
+        #q1{
+            background: lightseagreen;
+
+        }
+        #q2{
+            background-image: linear-gradient(to bottom, rgba(245, 245, 12, 0.639)
+            ,darkred);
+            
+        }
+        #q3{
+            background-image: url(imagens/pattern003.png);
+            
+        }
+    </style>
+</head>
+<body>
+    <h5 style="font-size: 25px; margin: 0;">link da aula <br>
+        <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/aulas/modulo-03/modulos/capitulo-19-aula-02-colocando-uma-imagem-de-fundo-no-seu-site/">Colocando uma imagem de fundo no seu site</a>
+            </h5>
+<main>    <div class="quadrado" id="q1"> 1 </div>
+    <div class="quadrado" id="q2"> 2 </div>
+    <div class="quadrado" id="q3">3</div></main>
+
+</body>
+</html>
