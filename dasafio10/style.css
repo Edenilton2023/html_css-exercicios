@@ -145,6 +145,7 @@ main a:hover{
    display: block;
    margin: auto;
   max-width: 350px;
+  background-size: cover;
  
 
  }
