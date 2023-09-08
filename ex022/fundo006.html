@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>posicionamento </title>
+    <title>fundo fixo de tela </title>
     <style>
     body{
         height: 100vh;
-        background: black;
-        background-image: url(imagens/wallpaper002.jpg);
+     background: black;
+       
+
+
+
+        /* background-image: url(imagens/wallpaper002.jpg);
         background-repeat: repeat-y;
         background-position: center center;
        background-size:cover;
+       background-attachment:fixed; */
+       /* mantem o fundo fixo em relaçao ao conteudo */
+
+       /* shorthand do background
+       color > image >postion > repet > size >attachment */ 
+        background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
+        background-size:cover;
+          /* o size nao funcinou dentro da shorthand 
+             */
+      
 
     }
     main{
         margin: auto;
         background: white;
-        width: 400px;
+      max-width:  400px;
         padding: 10px;
         border: 1px solid blue;
         border-radius: 15px;
@@ -28,8 +42,9 @@
     </style>
 </head>
 <body>
-    <h5 style="font-size: 25px; margin: 0;">link da aula <br>
-        <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/aulas/modulo-03/modulos/capitulo-19-aula-04-configurando-a-posicao-da-imagem-no-fundo-do-site/">Configurando a posição da imagem no fundo do site</a>
+    <h5 style="font-size: 25px; margin: 0;color: red;">link da aula <br>
+        <a style="color: green;"  href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/aulas/modulo-03/modulos/capitulo-19-aula-04-configurando-a-posicao-da-imagem-no-fundo-do-site/">Configurando a posição da imagem no fundo do site</a><br>
+        <a  style="color: green;" href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/aulas/modulo-03/modulos/capitulo-19-aula-06-background-attachment-e-shorthand-2/">background-attachment e shorthand</a>
             </h5>
 <main>
     <h1>teste de imagem de fundo</h1>
