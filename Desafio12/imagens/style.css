@@ -1,6 +1,18 @@
 @charset " UTF-8";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+:root{
+    --fonte-altenativo: Arial, Helvetica, sans-serif;
+    --fonte-texto: 'Borel', cursive;
+  
+    --titulo:   'Rock Salt', cursive;
+  
+
+}
 *{
     padding: 0px;
     margin: 0px;
@@ -9,6 +21,7 @@
 html body{
     min-height: 100vh;
     background: lightgray;
+   
 
 }
 header,footer{
@@ -20,10 +33,14 @@ header > h1{
     padding-top: 50px;
     font-variant:small-caps; /* maiusculas com destaque as primeiras letras */
     /* text-transform:uppercase ;  (letras maiusculas */
-   
+   font-family: var(--titulo);
+   font-size: 5vw;
+
 }
 header > p {
     padding-bottom: 50px;
+    font-family: var(--fonte-altenativo);
+    font-size: 3vw;
 }
 
 header a, footer a {
@@ -37,26 +54,38 @@ header a:hover, footer a:hover{
     color:wheat;
 
 }
+p{
+  font-family: var(--fonte-texto);  
+  font-size: 24px;
+ 
+}
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 3em;
     padding-left: 30px;
+ 
 }
 section.normal{
     background: white;
     color: black;
+    font-weight:600;
 
 }
 section.imagem{
     background: rgb(51, 51, 51);
     color: white;
+   
+  
+
 
 }
 section.imagem >p{
-    background-image: linear-gradient(to right , rgba(0, 0, 0, 0.250) 30% , transparent  );
+    background-image: linear-gradient(to right ,  rgba(0, 0, 0, 0.250) 30% , transparent  );
     width: 400px;
-    padding: 0px 50px;
+ display: inline-block;
+ padding: 5px;
+   
     
 
  
