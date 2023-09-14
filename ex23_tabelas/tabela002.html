@@ -4,9 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>uso de tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border: 2px dashed ;
+            width: 1230px;
+            border-collapse: collapse;
+            
+        
+       
+        }
+        thead{
+            background: grey;
+            color: white;
+        }
+
+        td , th {
+        border: 1px solid black;
+        padding: 10px;
+        padding-left: 18px;
+
+     }
+     tr.contraste{
+        background: lightgray;
+     }
+    </style>
 </head>
 <body>
-    
+    <!-- ANATOMIA PARA  TABELAS GRANDES 
+    TABLE
+                THEAD 
+                      TR,TD ,TH 
+                TBODY
+                     TR , TD, TH
+                TFOOT
+                     TR , TD , TH
+   -->
+   <table>
+    <thead>
+    <tr>
+        
+ 
+      <th> Posição</th>  
+
+     <th>   União federativa </th> 
+   
+     
+     <th> população (censo de 2010) </th>   
+      <th> população(censo de 2022) </th>
+       
+   
+ 
+     
+     <th>Mudanças  </th>
+
+  
+     <th>% da pop. total </th>
+
+   
+      <th>Pais compativel (habitantes )</th>
+
+     </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>01 </td>
+            <td> são paulo</td>
+            
+            <td>44 420 459</td>
+            <td>41 262 199</td>
+            <td>+7.65%</td>
+            <td>21,88%</td>
+            <td> Espanha (46 754 778)</td>
+        </tr>
+
+        <tr class="contraste">
+            <td>02 </td>
+            <td>  Minas Gerais</td>
+            
+            <td>20 538 718</td>
+            <td>19 597 330</td>
+            <td>+4.8%</td>
+            <td>10,11%</td>
+            <td>	 Burquina Fasso (20 903 273)</td>
+        </tr>
+
+        <tr>
+            <td>03 </td>
+            <td>  Rio de Janeiro</td>
+            
+            <td>16 054 524</td>
+            <td>15 989 929</td>
+            <td>+0.4%</td>
+            <td>7,91%	</td>
+            <td>Camboja Camboja (16 718 965)</td>
+        </tr>
+
+        <tr  class="contraste">
+            <td>04 </td>
+            <td> Bahia</td>
+            
+            <td>14 136 417</td>
+            <td>14 016 906</td>
+            <td>+0.85%</td>
+            <td>6,96%</td>
+            <td> Zimbabwe (14 862 924)</td>
+        </tr>
+
+        <tr>
+            <td>05 </td>
+            <td>  Paraná</td>
+            
+            <td>11 443 208</td>
+            <td>10 444 526	</td>
+            <td>+9.56%</td>
+            <td>5,64%</td>
+            <td> Tunísia (11 818 619)</td>
+        </tr>
+
+        <tr  class="contraste">
+            <td>06 </td>
+            <td>  Rio Grande do Sul</td>
+            
+            <td>10 880 506	</td>
+            <td>10 693 929</td>
+            <td>+1.74%</td>
+            <td>5,36%</td>
+            <td>  Cuba (11 326 616)</td>
+        </tr>
+
+        <tr>
+            <td>07 </td>
+            <td> Pernambuco</td>
+            
+            <td>9 058 155</td>
+            <td>8 796 448</td>
+            <td>+2.98%</td>
+            <td>4,46%</td>
+            <td> Áustria (9 006 398)</td>
+        </tr>
+
+        <tr  class="contraste">
+            <td>08 </td>
+            <td> 	 Ceará</td>
+            
+            <td>8 791 688</td>
+            <td>8 452 381</td>
+            <td>+4.01%</td>
+            <td>4,33%</td>
+            <td> Papua-Nova Guiné(8 947 024)</td>
+        </tr>
+
+        <tr>
+            <td>09 </td>
+            <td> são paulo</td>
+            
+            <td>44 420 459</td>
+            <td>41 262 199</td>
+            <td>+7.65%</td>
+            <td>21,88%</td>
+            <td> Espanha (46 754 778)</td>
+        </tr>
+
+        <tr  class="contraste">
+            <td>10 </td>
+            <td>	Pará Pará</td>
+            
+            <td>8 116 132	</td>
+            <td>7 581 051</td>
+            <td>+7.06%</td>
+            <td>4,1%</td>
+            <td> Suíça (8 654 622)</td>
+        </tr>
+
+        <tr>
+            <td>10 </td>
+            <td> 7 609 601</td>
+            
+            <td>6 248 436</td>
+            <td>+21.78%</td>
+            <td>+7.65%</td>
+            <td>3,75%</td>
+            <td> Paraguai (7 132 538)</td>
+        </tr>
+
+
+
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+   </table>
 </body>
 </html>
