@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            width: 400px;
+           margin: auto;
+           background: rgb(59, 59, 59);
+           color:white;
+           border-radius: 20px 20px 0px 0px;
+           height: 10px;
+           padding: 10px;
+        }
+        table {
+            border: 2px dashed ;
+            width: 1230px;
+            border-collapse: collapse;
+            position: relative;
+            
+        
+       
+        }
+        thead{
+            background: grey;
+            color: white;
+        }
+
+        td , th {
+        border: 1px solid black;
+        padding: 10px;
+        padding-left: 18px;
+
+     }
+     thead > tr > th{
+        position: static;
+        top: 0;
+        background: gray;
+
+
+   
+     
+     }
+      /* posso ussar odd / even (par / impar) */
+     tbody > tr:nth-child(2n){
+        background: lightgray;
+     }
+     tfoot{
+        background: gray;
+     }
+    </style>
+</head>
+<body>
+    <h1> exemplo de tabela</h1>
+
+    <table>
+        <tr>
+            <th>Grupo</th>
+            <th>Nomes</th>
+            <th>Filme</th>
+        </tr>
+    </table>
+</body>
+</html>

@@ -9,10 +9,20 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption{
+            width: 400px;
+           margin: auto;
+           background: rgb(59, 59, 59);
+           color:white;
+           border-radius: 20px 20px 0px 0px;
+           height: 10px;
+           padding: 10px;
+        }
         table {
             border: 2px dashed ;
             width: 1230px;
             border-collapse: collapse;
+            position: relative;
             
         
        
@@ -28,14 +38,37 @@
         padding-left: 18px;
 
      }
-     tr.contraste{
+     thead > tr > th{
+        position: static;
+        top: 0;
+        background: gray;
+
+
+   
+     
+     }
+      /* posso ussar odd / even (par / impar) */
+     tbody > tr:nth-child(2n){
         background: lightgray;
+     }
+     tfoot{
+        background: gray;
      }
     </style>
 </head>
-<body>
-    <!-- ANATOMIA PARA  TABELAS GRANDES 
+
+
+<body>  <h5 style="font-size: 25px; margin: 0;">link da aula <br>
+    <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/aulas/modulo-03/modulos/capitulo-21-aula-04-aprendendo-a-trabalhar-com-tabelas-grandes/">- Aprendendo a trabalhar com tabelas grandes</a><br><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/aulas/modulo-03/modulos/capitulo-21-aula-06-efeito-zebrado-na-tabela-com-html-e-css/">- Efeito Zebrado na tabela com HTML e CSS- </a><br><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/aulas/modulo-03/modulos/capitulo-21-aula-05-caption-e-escopo-de-titulos-em-tabelas/">- Caption e Escopo de títulos em tabelas</a>
+
+    <h5  style="font-size: 25px; margin: 0;"> <a href="contas.html">- Execicio pratico</a></h5>
+        </h5>
+
+
+    <!-- 
+        ANATOMIA PARA  TABELAS GRANDES 
     TABLE
+    caption( legenda )
                 THEAD 
                       TR,TD ,TH 
                 TBODY
@@ -44,28 +77,29 @@
                      TR , TD , TH
    -->
    <table>
+    <caption> <strong>Populaçâo das  unidades federativas do brasil</strong></caption>
     <thead>
     <tr>
         
  
-      <th> Posição</th>  
+      <th scope="col"> Posição</th>  
 
-     <th>   União federativa </th> 
+     <th scope="col">   União federativa </th> 
    
      
-     <th> população (censo de 2010) </th>   
-      <th> população(censo de 2022) </th>
+     <th scope="col"> população (censo de 2010) </th>   
+      <th scope="col"> população(censo de 2022) </th>
        
    
  
      
-     <th>Mudanças  </th>
+     <th scope="col">Mudanças  </th>
 
   
-     <th>% da pop. total </th>
+     <th scope="col">% da pop. total </th>
 
    
-      <th>Pais compativel (habitantes )</th>
+      <th scope="col">Pais compativel (habitantes )</th>
 
      </tr>
     </thead>
@@ -182,7 +216,7 @@
         </tr>
 
         <tr>
-            <td>10 </td>
+            <td>11 </td>
             <td> 7 609 601</td>
             
             <td>6 248 436</td>
@@ -196,8 +230,11 @@
 
     </tbody>
     <tfoot>
+        <th scope="row">total</th>
+        <td style="background: lightgray;color: blue;">000000</td>
 
     </tfoot>
    </table>
+   <p>lorem5000</p>
 </body>
 </html>
