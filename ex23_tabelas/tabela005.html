@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercico detabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 15px 15px 0px 0px;
+            width: 300px;
+            margin: auto;
+        }
+        th , td {
+            border: 2px solid red;
+        }
+        col.cnome{
+            background: greenyellow;
+        }
+        col.cgrup{
+            background: yellow
+      
+        }
+        col.cprof{
+            background: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h5 style="font-size: 25px; margin: 0;">link da aula <br>
+        <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/aulas/modulo-03/modulos/capitulo-21-aula-13-agrupando-colunas-com-colgroup/">Agrupando Colunas com colgroup</a>
+
+    <h1> Exercicio de tabela </h1>
+  
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrup" span="2">
+          
+            <col class="cprof">
+           
+        </colgroup>
+        <caption>cadastro de pessoas </caption>
+        <tr>
+           <th scope="col">Nome</th>
+           <th scope="col">Sexo</th>
+           <th scope="col">Idade</th>
+           <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana maria </td>
+            <td> F</td>
+            <td>25</td>
+            <td>Jonalista </td>
+        </tr>
+     
+            <td>Claudio </td>
+            <td> FM</td>
+            <td>28</td>
+            <td>programador </td>
+        </tr>
+      
+            <td>Gustavo </td>
+            <td> M</td>
+            <td>42</td>
+            <td>Professor </td>
+        </tr>
+     
+            <td>Helio </td>
+            <td> M</td>
+            <td>19</td>
+            <td>Vendedor </td>
+        </tr>
+       
+            <td>maria </td>
+            <td> F</td>
+            <td>39</td>
+            <td>Medica </td>
+        </tr>
+      
+            <td>Otavio </td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista </td>
+        </tr>
+    </table>
+</body>
+</html>
