@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            width: 900px;
+            height: 600px;
+            border: 1px solid  black ;
+        }
+       label{
+            background: blue;
+        }
+        input{
+            background: rgba(211, 211, 211, 0.316);
+          color: brown;
+        }
+        p{color: white;}
+    </style>
+</head>
+<body>
+    <h5 style="font-size: 25px; margin: 0;">link da aula <br>
+        <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-24-aula-1-como-criar-formularios-com-html5/">Como criar formulários com HTML5</a><br>
+        <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-24-aula-2-usar-label-vai-melhorar-seus-formularios/">Usar Label vai melhorar seus formulários</a>
+            </h5>  
+    <h1> meu primeiro formulario</h1>
+    <form action="cadastro.js"  method="get" autocomplete="off"> 
+
+         <!--metodo de envio padrao( method="get")  não aparece na url(method="post") ps.. cuidado ao usar senhas OBS.. nao torna mais seguro apenas menos visivel tem como ver atraves do  devtoos   
+        
+        (get) quando os dados não forem sensiveis 
+        suporta ate 3mil caracteres 
+        nao aceita fotos e nem dados sensivei
+
+        ( post) quando forem senseveis  
+        suporta fotos e dados sensivei 
+        aceita acima de 3mil caractres
+        aceita envio de arquivos 
+
+        e aprimora mais a segurança-->
+        <!--  autocomplete="off"completa a frase -->
+        <p><label for="inome">nome :</label> <input type="text" nome=" nome" id="inome"></p>
+        <!-- label é como uma etiqueta que diz aos navegadores que este nome pertece a esse input -->
+
+        <p>
+            <label for="isobrenome">sobrenome :</label>
+             <input type="text" nome=" sobrenome" id="isobrenome">
+        </p>
+
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+ 
+</body>
+</html>

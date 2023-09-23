@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            width: 900px;
+            height: 600px;
+            border: 1px solid  black ;
+        }
+       label{
+            background: gray;
+            color: black;
+        }
+        input{
+            background: rgba(211, 211, 211, 0.316);
+          color: brown;
+         margin-left: 3px;
+        }
+        .senha{
+            margin-left: 14px;
+        }
+        p{color: white;}
+    </style>
+</head>
+<body>
+    <h5 style="font-size: 25px; margin: 0;">link da aula <br>
+        <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-24-aula-3-metodos-get-e-post-para-formularios/">Métodos GET e POST para formulários</a><br><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-24-aula-04-criando-caixas-de-texto-e-de-senha/">Criando caixas de texto e de senha</a>
+            </h5>  
+    <h1> meu primeiro formulario</h1>
+    <form action="cadastro.php"  method="post" autocomplete="on"> 
+
+
+        <p><label for="iuso|">Usuario:</label> 
+            <input   type="text" name="usu" id="iuso" required minlength="4"
+            maxlength="30"
+            size="20"
+            placeholder="Nome de usuario"
+            autocomplete="username"
+            ></p>
+
+
+        <p><label for="isem "> senha:</label> 
+         <input class="senha" type=" password" name="usu" id="isen"
+         minlength="4"
+         size="20"
+         placeholder=" Digite sua senha "
+         autocomplete="current-password" 
+      
+         ></p>
+         <!-- 
+        minlength="10"  == tamanha minimo em largura  
+         size="20" ==  tamanho da caixa
+         placeholder=" Digite sua senha "== infomaçao dentro da xaxa
+         autocomplete="current-password" ==completa automaticamente a infomaçao previamente gravada
+          -->
+
+         
+        <input type="submit" value="Enviar">
+        <input type="reset" value="limpar">
+
+        
+
+       
+    </form>
+ 
+</body>
+</html>
