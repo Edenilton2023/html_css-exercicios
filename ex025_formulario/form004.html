@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplode formulario</title>
+</head>
+<body>
+    <h5 style="font-size: 25px; margin: 0;">link da aula <br>
+        <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-24-aula-07-formularios-com-telefone-e-e-mail/">Formulários com telefone e e-mail</a>
+            </h5> 
+
+            <form action="cadastro.js" method="get" autocomplete="on">
+                <fieldset>
+                    <legend>Dados pessoais </legend>
+                    <p><label for="inome">Nome</label>
+                    <input type="text" name="nome" id="inome"required minlength="5" maxlength="20">
+                                </p>
+                    <p><label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail"required maxlength="30" minlength="9" autocomplete="email">
+                                </p>
+                    
+                                <p>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="tel" id="itel"
+                    pattern="^\(\d{2}\)d{4,5}-\d{4}$"
+                    required placeholder="(71) 1 2345-6789">
+                                </p>
+                </fieldset>
+            <p><input type="submit" value="enviar"><br><br>
+            <input type="reset" value="limpar"></p>
+
+
+
+
+            
+        </body>
+    
+</body>
+</html>
