@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplode formulario</title>
+</head>
+<body>
+    <h5 style="font-size: 25px; margin: 0; background:lightgray;">link da aula <br>
+        <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-24-aula-10-select-datalist-e-textarea-em-html/"> Select, datalist e textarea em HTML</a>
+            </h5> 
+            <h1>Exemplo de formulario</h1>
+
+            <form action="cadastro.js" method="get" autocomplete="on">
+                <p> 
+                    <label for="iest">estado</label>
+                    <select name="estado" id="iest">
+                   
+                    <option value="">---selected---</option>
+
+                        <optgroup label="sudeste">
+                            <option value="mg">minas gerais </option>
+                            <option value="sp">são paulo</option>
+                            <option value="rj" >rio de janeiro</option>
+                        </optgroup>
+
+                        
+                        <optgroup label="nordeste">
+                            <option value="pe">pernambuco</option>
+                            <option value="MA">maranhao</option>
+                            
+                            <option value="RN">rio grande dpo norte</option>
+                        </optgroup>
+                        
+
+
+                    </select>
+                </p>
+                <p>
+                    <label for="iprof">profissão</label>
+                    <input type="text" name="prof" id="iprof" list="listprof">
+                    <datalist id="listprof">
+                        <option >Aministrador</option>
+                        <option >desevolvedor</option>
+                        <option value="gar">garson</option>
+                        <option value="Op">operador</option>
+                        <option value="Sus">sushiman</option>
+                      </datalist>
+                    
+                      
+               
+
+                </p>
+       
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+
+
+            </form>
+
+
+
+         
+
+
+
+
+            
+        </body>
+    
+</body>
+</html>
