@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplode formulario</title>
+</head>
+<body>
+    <h5 style="font-size: 25px; margin: 0; background:lightgray;">link da aula <br>
+        <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-24-aula-11-elemento-output-em-formularios-html/">Elemento output em formulários HTML</a>
+            </h5> 
+            <h1>Exemplo de formulario</h1>
+
+            <form action="cadastro.js" method="get" autocomplete="on">
+                <p>
+                    <label for="in1">numero 1</label>
+                    <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML=Number(in1.value * in2.value)"  >
+                </p>
+                <!-- required oninput="isoma.innerHTML=Number(in1.value * in2.value)"   foi colocado nos pois para qu quandoalterado fosse  a mudado simuntaneamente> -->
+
+                <p>
+                    <label for="in2">numero 2</label>
+                    <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML=Number(in1.value * in2.value) ">
+                    <!-- output  apenas caucula e mostra na tela mais nao vai no envio -->
+                  
+                </p>
+
+                <p>
+                    <label for="isoma "> soma</label>
+                    <output name="soma" id="isoma">0</output>
+            </p>
+           <!-- ================================================= -->
+             <p>
+                <label for="inum">numero</label>
+                <input type="range" name="num" id="inum" value="1"
+                oninput="ival.innerHTML= Number(inum.value)">
+                <output id="ival">1</output>
+            </p>
+
+
+
+<!-- ===================================================================== -->
+
+            <p>
+                <label for="iano">em que ano voce narceu</label>
+                <input type="number" name="ano" id="iano" min="1984" max="2023"  oninput="calcIdade()">
+            </p>
+            <p>
+                <label for="iidade"> sua idade é :</label>
+                <output id="iidade">0</output>
+
+            </p>
+   
+            
+                <br>
+       
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+           
+
+
+            </form>
+      
+            <script>
+                function calcIdade(){
+                    let atual = new Date().getFullYear()
+                    iidade.innerHTML = Number(atual)- Number(iano.value)
+                }
+            </script>
+        </body>
+    
+</body>
+</html>
