@@ -21,6 +21,13 @@ menu > ul {
     background: gray;
    
 }
+menu{
+    background: gray;
+}
+ul{
+   margin: auto;
+    width: 600px;
+}
 menu li {
     color: white;
     background: rgb(75, 75, 75);
