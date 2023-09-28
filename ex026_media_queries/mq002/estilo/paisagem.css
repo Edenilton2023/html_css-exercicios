@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+ /* configuraçõespaisagem(deitado )  */
+ body{
+    background-image: url(../imgens/cev-landscape.jpg);
+    background-position: center bottom;
+
+ }
