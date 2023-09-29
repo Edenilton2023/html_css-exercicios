@@ -1,8 +1,32 @@
 
 @charset "UTF-8";
 
+/* importante pesquisar sobre os Device breakpoints antes de fazer  pois estao sempre mudando */
+
 @media print{
-    
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    img#pc{display: none;}
+    img#iphone{display: none;} 
+   img#plint{display: block;}
+   img#tablet{display: none;}
+   img#tv{display: none;}
+   main::after{
+    content: 'este execcio foi criado atraves do curso em video';
+    color: brown;
+   }
+       
 }
 
 
