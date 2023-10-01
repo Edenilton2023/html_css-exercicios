@@ -24,10 +24,12 @@ menu >ul{
 }
 span#burguer{
     background-color: rgb(48    , 48, 48);
-    color: white;display: block;
+    color: white;
+ 
     text-align: center;
     padding: 10px;
-    cursor: pointer;
+    cursor: pointer;   
+    display: block;
 
 }
 span#burguer:hover{
